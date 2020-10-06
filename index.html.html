@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+        	table {
+        		border-collapse:collapse;
+        	}
+        	table,td{
+        		border:1px solid;
+        	}
+        	td{
+        		width:40px;
+        		text-align:center;
+        		padding:10px 0;
+        	}
+        </style>
+    </head>
+    <body>
+    	<div class="表格1">
+    		<table>
+    		<tr>
+    		<td colspan="2">1</td>
+    		<td rowspan="2">2</td>
+    	</tr>
+    	<tr>
+    		<td rowspan="2">3</td>
+    		<td>4</td>
+    	</tr>
+    	<tr>
+    		<td colspan="2">5</td>
+    	</tr>
+    	</table>
+    	</div>
+    	<hr>
+    	<div class="表格2">
+    			<table>
+    		<tr>
+    			<td rowspan="2">1</td>
+    			<td rowspan="2">2</td>
+    			<td colspan="2">3</td>
+    			<!-- <td rowspan="2">4</td> -->
+    		</tr>
+    		<tr>
+    			<!-- <td rowspan="2">5</td> -->
+    			<!-- <td colspan="2">6</td> -->
+    			<td colspan="2">4</td>
+    			<!-- <td rowspan="2">8</td> -->
+    		</tr>
+    		<tr>
+    			<td colspan="2">5</td>
+    			<!-- <td colspan="2">10</td> -->
+    			<td rowspan="2">6</td>
+    			<td rowspan="2">7</td>
+    		</tr>
+    		<tr>
+    			<td colspan="2">9</td>
+    			<!-- <td rowspan="2">14</td> -->
+    			<!-- <td colspan="2">15</td> -->
+    			<!-- <td rowspan="2">16</td> -->
+    		</tr>
+    	</table>
+    	</div>
+    	<hr>
+    	<div class="表格3">
+    		<table>
+            <tr>
+                <td rowspan="2">1</td>
+                <td colspan="2">2</td>
+                <td rowspan="2">3</td>
+                <!-- <td >4</td> -->
+            </tr>
+            <tr>
+                <td colspan="2">4</td>
+                <!-- <td>6</td> -->
+                <!-- <td>7</td> -->
+                <!-- <td>8</td> -->
+            </tr>
+            <tr>
+                <td rowspan="2">5</td>
+                <td colspan="2">6</td>
+                <td rowspan="2">7</td>
+                <!-- <td rowspan="2">12</td> -->
+            </tr>
+            <tr>
+            <td >8</td>
+                <td>9</td>
+                <!-- <td>15</td> -->
+                <!-- <td>16</td> -->
+            </tr>
+            <tr>
+                <td >10</td>
+                <td colspan="2" >11</td>
+                <td >12</td>
+                <!-- <td >20</td> -->
+            </tr>
+        </table>
+    	</div>
+    	<hr>
+    	<div class="Puer">
+    		<form action="" method="post">
+    		<p>
+    			<label for="yhm">用户名:</label>
+    			<input id="yhm" type="text" name="yhm" value="">
+    		</p>
+    		<p>
+    			<label for="mm">密码:</label>
+    			<input type="password" name="mm" id="mm" vlaue="">
+    		</p>
+    		<p>
+    			<label for="xb">性别:</label>
+    		<input type="radio" name="xb" id="nan">
+    		<label for="nan">男</label>
+    		<input type="radio" name="xb" ind="nv">
+    		<label for="nv">女</label>
+    		</p>
+    		<p>
+    			爱好:
+    			<input type="checkbox" name="ah" id="sw" checked>
+    			<label for="s">上网</label>
+    			<input type="checkbox" name="ah" id="lq" >
+    			<label for="s">篮球</label>
+    			<input type="checkbox" name="ah" id="zq" >
+    			<label for="s">足球</label>
+    			<input type="checkbox" name="ah" id="kj" >
+    			<label for="s">逛街</label>
+    			<input type="checkbox" name="ah" id="cg" >
+    			<label for="s">唱歌</label>
+    			<input type="checkbox" name="ah" id="dw" >
+    			<label for="s">跳舞</label>
+    			<input type="checkbox" name="ah" id="pq" >
+    			<label for="s">排球</label>
+    		</p>
+    		<p>
+    			居住地：
+    			<select name="jzd">
+    				<option value="河北省">河北省</option>
+    				<option value="北京市" selected>北京市</option>
+    				<option value="天津市">天津市</option>
+    			</select>
+    		</p>
+    		<p>
+    			<label for="tel">Tel:</label>
+    			<input id="tel" type="text" name="tel" value="">
+    		</p>
+    		<p>
+    			<label for="E-mail">E-mail:</label>
+    			<input id="em" type="text" name="em" value="">
+    		</p>
+    		<p>
+    			<label for="j">简介:</label>
+    			<textarea name="j" id="j" cols="30" rows="10"></textarea>
+    		</p>
+    		<p>
+    			<input type="submit" value="注册">
+    			<input type="reset" value="取消">
+    		</p>
+    	</form>
+    	</div>
+    	<hr>
+    	<div class="biaodan">
+    		<p>
+    		<label for="name">name:</label>
+    		<input type="name" type="next" name="xingming" value="">
+    	</p>
+    	<p>
+    		<label for="password">pwd:</label>
+    		<input type="password" name="mm" id="mm" vlaue>
+    	</p>
+    	<p>
+    		<label for="xb">sex:</label>
+    		<input type="radio" name="xb" id="male" checked="">
+    		<label for="male">male</label>
+    		<input type="radio" name="xb" id="female">
+    		<label for="male">female</label>
+    	</p>
+    	<p>
+    		age:
+    		<select name="age">
+    			<option value="1">1</option>
+    			<option value="2" selected="">2</option>
+    			<option value="3">3</option>
+    			<option value="4">4</option>
+    		</select>
+    	</p>
+    		<p>
+    			course:
+    			<input type="checkbox" name="course" id="ch">
+    			<label for="c">Chinesee</label>
+    			<input type="checkbox" name="course" id="ma">
+    			<label for="ma">Math</label>
+    			<input type="checkbox" name="course" id="en">
+    			<label for="en">English</label>
+    		</p>
+    		<p>
+    			<input type="submit" value="Submit it!">
+    			<input type="reset" value="Reset it!">
+    		</p>
+    	</p>
+    	</div>
+    </body>
+</html>
